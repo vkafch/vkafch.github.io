@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section id="intro" class="main">
+  <div class="spotlight">
+    <div class="content">
+      <header class="major">
+        <h2>Die Initiative</h2>
+      </header>
+      <p>Die Digitalisierung macht auch vor den zahlreichen <a href="http://www.svkv.ch">Verkehrskadetten-Abteilungen</a> nicht halt. Mit der Offenlegung unserer Projekte möchten wir die Zusammenarbeit unter den Abteilungen fördern. So können alle von den neuen Technologien profitieren und Doppelspurigkeiten vermieden werden.</p>
+    </div>
+  </div>
+</section>
+<section id="first" class="main special">
+  <header class="major">
+    <h2>Unsere Projekte</h2>
+  </header>
+  <div class="content row">
+    {% for project in site.projects %}
+    <div class="6u 12u(xsmall) project">
+      <p><img src="{{ site.github.url }}images/projects/{{ project.slug }}.png" alt="{{ project.title }}"></p>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section id="cta" class="main special">
+  <header class="major">
+    <h2>Kontakt</h2>
+    <p>Gerne unterstützen wir dich beim Umsetzen deiner Ideen. Wir freuen uns auf deine Kontaktaufnahme!</p>
+  </header>
+  <footer class="major">
+    <ul class="actions">
+      <li><a href="mailto:info@vkaf.ch" class="button">info@vkaf.ch</a></li>
+      <li><a href="tel:+41719253333" class="button">071 925 33 33</a></li>
+    </ul>
+  </footer>
+</section>
